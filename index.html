@@ -34,7 +34,11 @@
             charcoal: "hsl(235, 18%, 26%)",
             Tomato: "hsl(4, 100%, 67%)",
             placeholder: '#6b7280',
-            Brightred: "hsl(12, 88%, 59%)"
+            Brightred: "hsl(12, 88%, 59%)",
+            verydarkblue:"hsl(233,12%,13%)",
+            darkgrayishblue: "hsl(227,12%,61%)",
+            darkblue: "hsl(228,39%,23%)",
+            verylightgray:"hsl(0, 0%, 98%)",
           },
           fontSize: {
             xs: "14px",
@@ -51,7 +55,7 @@
           },
           fontFamily: {
             'Roboto-Regular': "Be Vietnam Pro",
-            'bold': ['Roboto-Bold', 'sans'],
+            'bold': ['Be Vietnam Pro', 'sans'],
           },
         },
 
@@ -61,7 +65,7 @@
   </script>
 </head>
 
-<body class="h-screen font-Roboto-Regular text-xs px-80 py-9 relative">
+<body class="h-screen font-Roboto-Regular text-xs px-72 py-9 relative">
   <div class=" z-[-85] bg-[url('images/bg-tablet-pattern.svg')] bg-no-repeat bg-right-top top-0 right-0">
   </div>
   <nav class="flex items-center justify-between">
@@ -89,7 +93,19 @@
     <button class="p-3 bg-Brightred rounded-lg font-Roboto-Regular text-white">Get started</button>
 
   </nav>
-
+<section class="flex mt-12">
+  <div class="flex-1">
+    <h1 class="text-[40px] text-darkblue font-bold">Bring everyone together to build better products.</h1>
+    <p class="pt-5 leading-8 text-justify text-darkgrayishblue">Manage makes it simple for software teams <br>
+      to plan day-to-day tasks while keeping the <br>
+      larger team goals in view.
+    </p>
+    <button class="p-3 bg-Brightred rounded-lg font-Roboto-Regular text-white mt-12">Get started</button>
+  </div>
+  <div class="flex-2">
+    <img src="./images/illustration-intro.svg" alt="" srcset="">
+  </div>
+</section>
 
   <div class="hidden">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
