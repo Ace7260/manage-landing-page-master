@@ -1,20 +1,16 @@
 # Frontend Mentor - Manage landing page
 
-![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)
-
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+This is a solution to the [Design preview for the manage landing page master coding challenge](https://www.frontendmentor.io/challenges/). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## The challenge
+### The challenge
 
 Your challenge is to build out this landing page and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
 Your users should be able to:
 
@@ -28,3 +24,31 @@ Your users should be able to:
 Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
 
 **Have fun building!** 🚀
+
+### Screenshot
+
+![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)
+
+### Links
+
+- Solution URL: [On github](https://github.com/Ace7260/Newsletter-sign-up-form-with-success-message.git)
+- Live Site URL: [Live](https://newsletter-alpha.vercel.app/)
+
+### Built with
+
+- Semantic HTML5 markup
+- Tailwind css
+- Flexbox
+  
+### Useful resources
+- HTML
+- Tailwind css 
+- JS
+  
+## Author
+
+- Uiverse - [Irakoze Eddy Nobel](https://uiverse.io/profile/Ace7260)
+- Codepen - [Irakoze Eddy Nobel](https://codepen.io/ace7260)
+- Github - [Irakoze Eddy Nobel](https://github.com/ace7260)
+- Frontend Mentor - [@ace7260](https://www.frontendmentor.io/profile/Ace7260)
+- Twitter - [@nobel_eddy](https://www.twitter.com/nobel_eddy)
