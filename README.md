@@ -32,7 +32,7 @@ Want some support on the challenge? [Join our community](https://www.frontendmen
 ### Links
 
 - Solution URL: [On github](https://github.com/Ace7260/Newsletter-sign-up-form-with-success-message.git)
-- Live Site URL: [Live](https://newsletter-alpha.vercel.app/)
+- Live Site URL: [Live](https://manage-landing-page-ace7260.vercel.app/)
 
 ### Built with
 
