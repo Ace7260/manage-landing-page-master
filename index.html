@@ -36,6 +36,7 @@
             Tomato: "hsl(4, 100%, 67%)",
             placeholder: '#6b7280',
             Brightred: "hsl(12, 88%, 59%)",
+            Verypalered: "hsl(13,100%,96%)",
             verydarkblue: "hsl(233,12%,13%)",
             darkgrayishblue: "hsl(227,12%,61%)",
             darkblue: "hsl(228,39%,23%)",
@@ -66,34 +67,55 @@
   </script>
 </head>
 
-<body class="h-screen font-Roboto-Regular text-xs  relative">
+<body class="h-screen font-Roboto-Regular text-xs relative">
   <div class="bg-[url('images/bg-tablet-pattern.svg')] bg-no-repeat bg-right-top bg-[length:700px_700px]">
 
     <nav class="flex items-center justify-between px-4 lg:px-20 2xl:px-72 py-9">
       <img src="/images/logo.svg" alt="logo" srcset="">
       <ul class="hidden lg:flex ">
         <li class="mx-5">
-          <a href="#">Pricing</a>
+          <a href="#" class="active:text-Brightred">Pricing</a>
         </li>
         <li class="mx-5">
-          <a href="#">
+          <a href="#" class="active:text-Brightred">
             Product</a>
         </li>
         <li class="mx-5">
-          <a href="#">About Us</a>
+          <a href="#" class="active:text-Brightred">About Us</a>
         </li>
         <li class="mx-5">
-          <a href="#">Careers</a>
+          <a href="#" class="active:text-Brightred">Careers</a>
         </li>
         <li class="mx-5">
-          <a href="#">Community</a>
+          <a href="#" class="active:text-Brightred">Community</a>
         </li>
       </ul>
       <button class="p-3 bg-Brightred rounded-lg font-Roboto-Regular text-white hidden lg:block">Get started</button>
-      <img src="./images/icon-hamburger.svg" alt="" class="lg:hidden">
+      <img src="./images/icon-hamburger.svg" alt="" class="lg:hidden" id="btn-menu">
+      <img src="./images/icon-close.svg" alt="" class="hidden" id="btn-menu-close">
     </nav>
-    <section class="flex mt-14 px-4 lg:px-20 2xl:px-72 flex-wrap-reverse lg:flex-nowrap">
-      <div class="flex-1">
+    <section class="flex mt-14 px-4 lg:px-20 2xl:px-72 flex-wrap-reverse lg:flex-nowrap z-30 relative">
+      <div id="menu" class="w-11/12 bg-white rounded-xl z-40 absolute top-0 hidden shadow-lg ">
+        <ul class="flex flex-col justify-center items-center gap-9 py-5 z-50">
+          <li class="mx-5">
+            <a href="#" class="font-bold text-darkblue active:text-Brightred">Pricing</a>
+          </li>
+          <li class="mx-5">
+            <a href="#" class="font-bold text-darkblue active:text-Brightred">
+              Product</a>
+          </li>
+          <li class="mx-5">
+            <a href="#" class="font-bold text-darkblue active:text-Brightred">About Us</a>
+          </li>
+          <li class="mx-5">
+            <a href="#" class="font-bold text-darkblue active:text-Brightred">Careers</a>
+          </li>
+          <li class="mx-5">
+            <a href="#" class="font-bold text-darkblue active:text-Brightred">Community</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex-1 z-30">
         <h1 class="text-[40px] text-darkblue font-bold">Bring everyone<br> together to build<br> better products.</h1>
         <p class="pt-5 leading-8 text-justify text-darkgrayishblue">Manage makes it simple for software teams <br>
           to plan day-to-day tasks while keeping the <br>
@@ -103,14 +125,14 @@
         <button class="p-3 bg-Brightred rounded-lg font-Roboto-Regular text-white mt-5">Get
           started</button>
       </div>
-      <div class="flex-2">
+      <div class="flex-2 z-30">
         <img src="./images/illustration-intro.svg" alt="illustration-intro" srcset="" class="">
       </div>
     </section>
   </div>
-  <section class="flex mt-10 gap-5 px-4 lg:px-20 2xl:px-72 flex-wrap lg:flex-nowrap">
-    <div class="flex-4 gap-5 flex-col">
-      <h1 class="text-[30px] text-darkblue font-bold">What’s different about Manage?</h1>
+  <section class="flex mt-10 gap-5  lg:px-20 2xl:px-72 flex-wrap lg:flex-nowrap mb-10">
+    <div class="flex-4 gap-5 flex-col px-4">
+      <h1 class="text-[30px] text-darkblue font-bold">What’s different about <br>Manage?</h1>
       <p class="leading-8">
         Manage provides all the functionality your team needs, without
         the complexity. Our software is tailor-made for modern digital
@@ -118,9 +140,9 @@
       </p>
     </div>
     <div>
-      <ul class="flex flex-col gap-2">
-        <li class="text-justify leading-relaxed flex justify-center items-start flex-col">
-          <div class="flex justify-center items-center gap-4">
+      <ul class="flex flex-col gap-8">
+        <li class="text-justify leading-relaxed flex justify-center items-start flex-col pl-4 lg:pl-0">
+          <div class="flex lg:justify-center items-center gap-4 bg-Verypalered w-full lg:w-auto  lg:bg-white">
             <span class="bg-Brightred rounded-lg font-Roboto-Regular text-white py-1 px-4 text-center block"">
             01
           </span>
@@ -128,14 +150,14 @@
               Track company-wide progress
               </h2>
           </div>
-          <p class="ml-16 leading-8">
+          <p class="lg:ml-16 leading-8 pr-4">
             See how your day-to-day tasks fit into the wider vision. Go from
             tracking progress at the milestone level all the way done to the
             smallest of details. Never lose sight of the bigger picture again.
           </p>
         </li>
-        <li class="text-justify leading-relaxed flex justify-center items-start flex-col">
-          <div class="flex justify-center items-center gap-4">
+        <li class="text-justify leading-relaxed flex justify-center items-start flex-col pl-4 lg:pl-0">
+          <div class="flex lg:justify-center items-center gap-4 bg-Verypalered w-full lg:w-auto lg:bg-white  lg:pl-0">
             <span class="bg-Brightred rounded-lg font-Roboto-Regular text-white py-1 px-4 text-center block">
               02
             </span>
@@ -143,14 +165,14 @@
               Advanced built-in reports
             </h2>
           </div>
-          <p class="ml-16 leading-8">
+          <p class="lg:ml-16 leading-8 pr-4">
             Set internal delivery estimates and track progress toward company
             goals. Our customisable dashboard helps you build out the reports
             you need to keep key stakeholders informed.
           </p>
         </li>
-        <li class="text-justify leading-relaxed flex justify-center items-start flex-col">
-          <div class="flex justify-center items-center gap-4">
+        <li class="text-justify leading-relaxed flex justify-center items-start flex-col pl-4 lg:pl-0">
+          <div class="flex lg:justify-center items-center gap-4 bg-Verypalered w-full lg:w-auto  lg:bg-white">
             <span class="bg-Brightred rounded-lg font-Roboto-Regular text-white py-1 px-4 text-center block">
               03
             </span>
@@ -158,7 +180,7 @@
               Everything you need in one place
             </h2>
           </div>
-          <p class="ml-16 leading-8">
+          <p class="lg:ml-16 leading-8 pr-4">
             Stop jumping from one service to another to communicate, store files,
             track tasks and share documents. Manage offers an all-in-one team
             productivity solution.
@@ -167,7 +189,7 @@
       </ul>
     </div>
   </section>
-  <section class="mt-10">
+  <section class="mt-10 mb-10">
     <div class="bg-[url('images/bg-tablet-pattern.svg')] bg-no-repeat bg-left-top bg-[length:700px_700px] z-50">
 
 
@@ -208,7 +230,8 @@
         <div class="h-2 w-2 bg-Brightred rounded-full inline-block cursor-pointer"></div>
       </div>
       <div class="text-center">
-        <button class="p-3 bg-Brightred rounded-lg font-Roboto-Regular text-white mt-5">Get started</button>
+        <button class="p-3 bg-Brightred rounded-lg font-Roboto-Regular text-white mt-5 font-bold shadow-xl">Get
+          started</button>
       </div>
     </div>
   </section>
@@ -237,22 +260,26 @@
       </div>
       <div class="flex justify-evenly lg:justify-between w-full lg:w-2/4">
         <ul class="flex flex-col gap-3">
-          <li>Home</li>
-          <li>Pricing</li>
-          <li>Products</li>
-          <li>About Us</li>
+          <li><a href="" class="active:text-Brightred">Home</a></li>
+          <li><a href="" class="active:text-Brightred">Pricing</a></li>
+          <li><a href="" class="active:text-Brightred">Products</a></li>
+          <li><a href="" class="active:text-Brightred">About Us</a></li>
         </ul>
         <ul class="flex flex-col gap-3">
-          <li>Careers</li>
-          <li>Community</li>
-          <li>Privacy Policy</li>
+          <li><a href="" class="active:text-Brightred">Careers</a></li>
+          <li><a href="" class="active:text-Brightred">Community</a></li>
+          <li><a href="" class="active:text-Brightred">Privacy Policy</a></li>
         </ul>
       </div>
       <div class="flex flex-col justify-between items-center w-full lg:w-2/4 gap-5 lg:items-end">
-        <div class="w-3/4 flex justify-center gap-5">
-          <input type="search" placeholder="Updates in your inbox…  " class="p-3 rounded-lg text-black w-3/4">
-          <button class="p-3 bg-Brightred rounded-lg font-Roboto-Regular text-white">Go</button>
-        </div>
+        <form class="w-3/4 flex justify-center gap-5">
+          <input type="email" placeholder="Updates in your inbox…  " id="email" class="p-3 rounded-lg text-black w-3/4"
+            autocomplete="off" required>
+
+          <button type="submit" id="submitButton"
+            class="p-3 bg-Brightred rounded-lg font-Roboto-Regular text-white">Go</button>
+        </form>
+        <p id="emailError" class="text-red-500 text-sm font-bold hidden self-center">Email required.</p>
         <p class="text-darkgrayishblue hidden lg:block"> Copyright
           <script>
             document.write(new Date().getFullYear())
@@ -268,7 +295,7 @@
         Nobel</a>.
     </div>
   </section>
-
+  <script src="./script.js"></script>
 </body>
 
 </html>
